@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- Author : M.Rakhunathan !-->
+<html>
+    <head>
+        <title>Table With Alternate Color</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            .tableFormat{
+                width:100%; 
+                border-collapse:collapse; 
+            }
+            .tableFormat{
+                width: 300px;
+                height: 100px;
+                background-color: yellow;
+                box-shadow: 10px 10px 5px #888888;
+            }
+            .tableFormat td{ 
+                padding:7px; border:#D8D8D8 1px solid;
+            }
+            .tableFormat tr{
+                background: #E6E6E6;
+            }
+            .tableFormat tr:nth-child(odd){ 
+                background: #E6E6E6;
+            }
+            .tableFormat tr:nth-child(even){
+                background: #D8D8D8;
+            }
+        </style>
+    </head>
+    <body>
+        <table class="tableFormat">
+            <tr><td>1........</td><td>One</td></tr>
+            <tr><td>2........</td><td>Two</td></tr>
+            <tr><td>3........</td><td>Three</td></tr>
+            <tr><td>4........</td><td>Four</td></tr>
+            <tr><td>5........</td><td>Five</td></tr>
+            <tr><td>6........</td><td>Six</td></tr>
+        </table>
+    </body>
+</html>

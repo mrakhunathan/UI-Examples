@@ -1,0 +1,44 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23 Jan, 2017, 3:27:44 PM
+    Author     : Rakhunathan.M
+*/
+
+.myButton{
+    opacity: 0.9; 
+    background-color: #ccccff;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+};
+
+.myTF{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #3CBC8D;
+    color: white;
+};
+
+.checkBox{
+    background: #ffcccc;
+    height: 20px;
+    width: 200px;
+    align-content: space-between;
+
+};
+
+.tableStyle
+{
+    table-layout: auto;
+    background-color: lightgray;
+};

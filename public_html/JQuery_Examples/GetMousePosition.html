@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- Author : M.Rakhunathan !-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="scripts/jquery-3.2.1.min.js"></script>
+        <script>
+            jQuery(function ($) {
+                var currentMousePos = {x: -1, y: -1};
+                $(document).mousemove(function (event) {
+                    currentMousePos.x = event.pageX;
+                    currentMousePos.y = event.pageY;
+                    currentAction = 'Moving Mouse at ' + currentMousePos.x + ":" + currentMousePos.y;
+                    console.log(currentAction);
+                    $("#XDiv").text(currentAction);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div>
+            <p id="XDiv">
+            </p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Mouse and Key Events</title>
+    </head>
+    <script>
+        function checkChangeEvent(eventFrom)
+        {
+            console.log(eventFrom.id + ' = ' + document.getElementById(eventFrom.id).checked);
+        }
+        function radioChangeEvent(eventFrom)
+        {
+            console.log(document.getElementsByName(eventFrom.name).valueOf());
+        }
+        function getValue(eventFrom)
+        {
+            console.log(eventFrom.id + ' = ' + document.getElementById(eventFrom.id).value);
+        }
+        function buttonMouseOver()
+        {
+            console.log('MouseOver...');
+        }
+        function buttonMouseOut()
+        {
+            console.log('MouseOut...');
+        }
+    </script>
+    <form>
+        <table>
+            <tr>
+                <td>Text Field</td>
+                <td><input type="text" id="myTF"></td>
+            </tr>
+            <tr>
+                <td>Checkbox</td>
+                <td><input type="checkbox" id="c1" onchange="checkChangeEvent(this)">c1<input type="checkbox" id="c2" onchange="checkChangeEvent(this)">c2</td>
+            </tr>
+            <tr>
+                <td>Radio</td>
+                <td><input type="radio" id="r1" name="rGroup" onchange="radioChangeEvent(this)">r1 <input type="radio" id="r2" name="rGroup" onchange="radioChangeEvent(this)">r2</td>
+            </tr>
+            <tr>
+                <td>Range</td>
+                <td><input type="range" id="thisRange" onchange="getValue(this)"></td>
+            </tr>
+            <tr>
+                <td>Date</td>
+                <td><input type="date" id="myDate" onchange="getValue(this)"></td>
+            </tr>
+            <tr>
+                <td>Button</td>
+                <td><input type="button" value="Hello" onmouseover="buttonMouseOver()" onmouseout="buttonMouseOut()"></td>
+            </tr>
+        </table>
+    </form>
+</html>

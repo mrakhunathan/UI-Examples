@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- Author : M.Rakhunathan !-->
+<html>
+    <head>
+        <title>UI-Router</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="scripts/angular.min.js"></script>
+        <script src="scripts/angular-ui-router.min.js"></script>
+        <script src="scripts/RouterScript.js"></script>
+    </head>
+    <body ng-app="routerApp" ng-controller="mgController">
+        <table>
+            <tr>
+                <td><div ui-view=""></div></td>        
+            </tr>
+            <tr>
+                <td><div ui-view="view1"></div></td>        
+            </tr>
+            <tr>
+                <td><div ui-view="view2"></div></td>        
+            </tr>
+            <tr>
+                <td><div ui-view="view3"></div></td>        
+            </tr>
+        </table>
+    </body>
+</html>

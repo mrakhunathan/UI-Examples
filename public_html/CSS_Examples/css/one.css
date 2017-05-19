@@ -1,0 +1,26 @@
+.myDivOne {
+    background-color: yellow;
+    color: red;
+    height: 20px;
+    width: 500px;
+}
+.myDivTwo {
+    background-color: bisque;
+    color: blue;
+    height: 20px;
+    width: 500px;
+}
+.myDivThree {
+    background-color: window;
+    color: blue;
+    height: 20px;
+    width: 500px;
+    border-style: dotted;
+}
+.myDivFour {
+    background-color: #ffccff;
+    border-style: outset;
+    color: blue;
+    height: 20px;
+    width: 500px;
+}
