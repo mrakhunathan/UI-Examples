@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multiway Data Binding</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="scripts/angular.min.js"></script>
+        <script>
+            function f()
+            {
+                console.log('f..');
+            }
+            var myApp = angular.module('datBindingExample', []);
+            myApp.controller('datBindingExampleController', function ($scope) {
+                $scope.methodOnChange = function ()
+                {
+                    console.log("Current Value = " + $scope.myTextField);
+                };
+            });
+        </script>
+    </head>
+    <body ng-app="datBindingExample" ng-controller="datBindingExampleController">
+        Enter Your name : <input type="text" 
+                                 ng-me
+                                 ng-model="myTextField" ng-change="methodOnChange()" onchange="f()"> 
+        <br/>
+        Display Value : {{myTextField}}
+    </body>
+</html>

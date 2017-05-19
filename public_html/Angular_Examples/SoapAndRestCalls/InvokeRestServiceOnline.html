@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Service Calls</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="scripts/angular.min.js"></script>
+        <script src="scripts/app.js"></script>
+        <script src="scripts/RestCallerService.js"></script>
+    </head>
+    <body ng-app="ModuleX" ng-controller="XController" ng-init="getCountries()">
+        <table border="1">
+            <tr>
+                <th ng-repeat="tableHeader in tableHeaders" align="left">
+                    {{tableHeader}}
+                </th>
+            </tr>
+            <tr ng-repeat="a in serviceResponse track by $index">
+                <td>{{a.name}}</td>
+                <td>{{a.alpha2_code}}</td>
+                <td>{{a.alpha3_code}}</td>
+            </tr>
+
+        </table>
+    </body>
+</html>

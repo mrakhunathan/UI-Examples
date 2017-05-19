@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="scripts/angular.min.js"></script>
+        <script src="scripts/app.js"></script>
+    </head>
+    <body ng-app="JSonSample" ng-controller="JSonSampleController">
+        <table border="1">
+            <tr ng-repeat="a in myObj.countries track by $index">
+                <td>{{a.name}}</td>
+                <td>{{a.shortName}}</td>
+                <td>
+                    <table>
+                        <tr ng-repeat="b in a.states">
+                            <td>{{b}}</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
